@@ -1,0 +1,409 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(../img/sign/login-ground.jpg);
+	background-size: 100%;
+	background-repeat:no-repeat ;
+}
+.tlogo{
+	list-style: none;
+	overflow: hidden;
+	width: 1200px;
+	margin: 30px auto 0;
+}
+.tlogo li{
+	float: left;
+	margin-right: 10px;
+	padding-right: 10px;
+	font-size: 24px;
+	color: white;
+	font-weight: bold;
+	position: relative;
+}
+.tlogo li:nth-of-type(1) a img{
+	width: 137px;
+	height: 24px;
+}
+.tlogo li:nth-of-type(1)::before{
+	content: '';
+	width: 1px;
+	height: 24px;
+	background-color: white;
+	position: absolute;
+	right: 0;
+}
+.box{
+	height: 600px;
+	margin-top: 20px;
+	min-width: 900px;
+}
+.box .box1{
+	margin-bottom: 30px;
+}
+.box .box1 a{
+	width: 170px;
+	height: 30px;
+	display:block;
+	margin: 0 auto 10px;
+}
+.box .box1 p{
+	font-size: 18px;
+	text-align: center;
+	color: white;
+}
+.box .box2{
+	width: 336px;
+	height: 435px;
+	margin: 0 auto;
+	background-color: white;
+	position: relative;
+	padding: 30px 32px;
+	box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	/* display: none; */
+}
+.box .box2 .b2_uls{
+	list-style: none;
+	overflow: hidden;
+	border-bottom: 1px solid lightgrey;
+}
+.box .box2 .b2_uls li{
+	color: #999999;
+	float: left;
+	margin-bottom: -1px;
+	margin-right: 30px;
+	padding-bottom: 30px;
+	cursor: pointer;
+	font-weight: 500;
+}
+.box .box2 .b2_uls li:nth-of-type(3){
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.box .box2 .b2_uls li:nth-of-type(3):hover{
+	opacity: 0.8;
+}
+.box .box2 .b2_uls li.lis{
+	border-bottom: 3px solid rgba(0,0,0,0);
+}
+.box .box2 .b2_uls li.lis:hover{
+	color: black;
+	border-bottom: 3px solid black;
+}
+.box .box2 .b2_uls li.lis1{
+	color: black;
+	border-bottom: 3px solid black;
+}
+.box .box2 .b2_box1{
+	margin-top: 44px;
+	/* display: none; */
+}
+.box .box2 .b2_box1 input.inp1,.box .box2 .b2_box1 input.inp3{
+	width: 336px;
+	height: 42px;
+	padding-left: 20px;
+    padding-right: 20px;
+    color: #666666;
+	font-size: 14px;
+	border: 1px solid #dddddd;
+	background-color: #f4f4f4;
+	box-sizing: border-box;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	outline: none;
+}
+.box .box2 .b2_box1 input.inp3{
+	border: none;
+}
+.box .box2 .b2_boxy{
+	height: 166px;
+	margin-top: 44px;
+	margin-bottom: 20px;
+	position: relative;
+	display: none;
+}
+.box .box2 .b2_boxy .sjh{
+	overflow: hidden;
+}
+.box .box2 .b2_boxy .sjh .j86{
+	width: 70px;
+	height: 42px;
+	line-height: 42px;
+	padding-left: 8px;
+	border-radius: 4px 0 0 4px;
+	color: #666666;
+	font-size: 14px;
+	background-color: #f4f4f4;
+	position: relative;
+	float: left;
+	border: 1px solid darkgray;
+	cursor: pointer;
+}
+.box .box2 .b2_boxy .sjh .j86::after{
+	content: '';
+	width: 10px;
+	height: 10px;
+	background-color: gray;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 13px;
+	right: 14px;
+}
+.box .box2 .b2_boxy .sjh .j86::before{
+	content: '';
+	width: 14px;
+	height: 10px;
+	background-color: #f4f4f4;
+	position: absolute;
+	top: 9px;
+	right: 12px;
+	z-index: 1;
+}
+.box .box2 .b2_boxy .sjh input{
+	float: left;
+	width: 214px;
+	height: 42px;
+	border-radius: 0 4px 4px 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #666666;
+	font-size: 14px;
+	background-color: #f4f4f4;
+	border: 1px solid darkgray;
+	border-left: 0;
+	outline: none;
+}
+.box .box2 .b2_boxy .sjh ul{
+	list-style: none;
+	width: 334px;
+	background-color: white;
+	padding: 0 26px;
+	float: left;
+	border-radius: 4px;
+	position: absolute;
+	top: 46px;
+	box-sizing: border-box;
+	z-index: 10;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+	display: none;
+}
+.box .box2 .b2_boxy .sjh ul li{
+	font-size: 14px;
+	width: 274px;
+	height: 41px;
+	line-height: 41px;
+	border-bottom: 1px solid lightgray;
+	overflow: hidden;
+	cursor: pointer;
+}
+.box .box2 .b2_boxy .sjh ul li span{
+	float: right;
+}
+.box .box2 .b2_boxy .hdjs{
+	width: 336px;
+	height: 32px;
+	background-color: #f4f4f4;
+	font-size: 12px;
+	line-height: 32px;
+	margin: 20px 0;
+	cursor: pointer;
+}	
+.box .box2 .b2_boxy .hdjs span{
+	display: inline-block;
+	background-color: white;
+	box-sizing: border-box;
+	border: 1px solid darkgrey;
+	width: 40px;
+	margin-right: 64px;
+	text-align: center;
+}
+.box .box2 .b2_boxy input{
+	width: 336px;
+	height: 42px;
+	border-radius:4px;
+	color:darkgray;
+	font-size: 14px;
+	background-color: #f4f4f4;
+	border: 0;
+	outline: none;
+}
+.box .box2 .b2_box2{
+	overflow: hidden;
+}
+.box .box2 .b2_box2 input.inp4{
+	position: relative;
+	top: 2px;
+	width: 14px;
+    height: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	appearance: none;
+	background: url(../img/sign/Group%2035.svg)no-repeat top center;
+	cursor: pointer;
+	margin-right: 6px;
+	outline: none;
+}
+.box .box2 .b2_box2 input.inp4:checked{
+	background: url(../img/sign/fxhover.svg)no-repeat top center;
+}
+.box .box2 .b2_box2 label{
+	font-size: 14px;
+}
+.box .box2 .b2_box2 .uls{
+	list-style: none;
+	overflow: hidden;
+	float: right;
+}
+.box .box2 .b2_box2 .uls li{
+	float: left;
+	position: relative;
+}
+.box .box2 .b2_box2 .uls li>a{
+	text-decoration: none;
+	font-size: 14px;
+	color: darkgray;
+	margin-left: 24px;
+}
+.box .box2 .b2_box2 .uls li>a:hover{
+	color: black;
+}
+.box .box2 .b2_box2 .uls li:nth-of-type(1)::before{
+	content: '';
+	width: 1px;
+	height: 14px;
+	background-color: darkgray;
+	position: absolute;
+	right: -14px;
+	top: 5px;
+}
+.box .box2 .b2_box3{
+	margin-top: 60px;
+}
+.box .box2 .b2_box3 p{
+	text-align: center;
+	font-size: 14px;
+	color: darkgray;
+	margin-bottom: 15px;
+}
+.box .box2 .b2_box3 .uls{
+	list-style: none;
+	overflow: hidden;
+	display: inline-block;
+	margin-left: 80px;
+}
+.box .box2 .b2_box3 .uls li{
+	float: left;
+	width: 42px;
+	height: 42px;
+	background-color: lightgray;
+	border-radius: 50%;
+	margin-right: 26px;
+	cursor: pointer;
+}
+.box .box2 .b2_box3 .uls li img{
+	width: 24px;
+	margin: 10px 0 0 8px;
+}
+.box .box2 .b2_box3 .uls li:nth-of-type(3) img{
+	width: 20px;
+	margin-left: 11px;
+}
+.box .box2 .b2_box3 .uls li:nth-of-type(1):hover{
+	background-color: #80d640;
+}
+.box .box2 .b2_box3 .uls li:nth-of-type(2):hover{
+	background-color: red;
+}
+.box .box2 .b2_box3 .uls li:nth-of-type(3):hover{
+	background-color: dodgerblue;
+}
+.box .weima{
+	width: 336px;
+    height: 435px;
+	margin: 0 auto;
+    background-color: white;
+    position: relative;
+    padding: 30px 32px;
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+	display: none;
+}
+
+.box .weima .p1{
+	font-weight: 500;
+	padding-bottom: 20px;
+	border-bottom: 1px solid gainsboro;
+}
+.box .weima span{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+.box .weima>img{
+	width: 216px;
+	margin-top: 15px;
+	margin-left: 60px;
+	margin-bottom: 6px;
+}
+.box .weima .p2{
+	font-size: 13px;
+	font-weight: 400;
+	color: darkgray;
+	text-align: center;
+	margin-bottom: 6px;
+}
+.box .weima .uls{
+	margin-top: 56px;
+	list-style: none;
+	overflow: hidden;
+	width: 170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.box .weima .uls li{
+	float: left;
+	padding: 0 11px;
+	position: relative;
+}
+.box .weima .uls li:nth-of-type(1)::before{
+	content: '';
+	width: 1px;
+	height: 14px;
+	background-color: darkgray;
+	position: absolute;
+	right: 0;
+	top: 4px;
+}
+.box .weima .uls li a{
+	font-size: ;
+	text-decoration: none;
+	font-size: 14px;
+	color: darkgrey;
+}
+.box .weima .uls li a:hover{
+	color: black;
+}
+.box .box3{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.box .box3 a{
+	display: block;
+	text-align: center;
+	margin-bottom: 30px;
+	text-decoration: none;
+	font-size: 14px;
+	color: white;
+}
+.box .box3 p{
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	margin-bottom: 10px;
+}

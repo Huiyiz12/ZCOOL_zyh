@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="13px" height="14px" viewBox="0 0 13 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 13.025 13.019 13.025 13.019 0 0 0"/>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1032.000000, -202.000000)">
+            <g id="Page-1" transform="translate(1032.000000, 202.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"/>
+                </mask>
+                <g id="Clip-2"/>
+                <path d="M11.7414,4.125 L11.0414,4.825 L8.2414,2.025 L8.9414,1.325 C9.1414,1.025 9.6414,1.025 9.9414,1.325 L11.6414,3.025 C11.9414,3.325 12.0414,3.725 11.7414,4.125 L11.7414,4.125 Z M1.4414,11.725 L2.2414,8.625 L4.4414,10.925 L1.4414,11.725 Z M5.5414,10.325 L2.7414,7.525 L7.5414,2.625 L10.3414,5.425 L5.5414,10.325 Z M12.4414,2.225 L10.7414,0.525 C9.9414,-0.175 8.7414,-0.175 8.0414,0.525 L1.6414,7.025 L1.6414,7.125 C1.5414,7.225 1.4414,7.325 1.4414,7.425 L0.0414,12.325 C-0.0586,12.525 0.0414,12.725 0.1414,12.825 C0.3414,12.925 0.4414,13.025 0.5414,13.025 L0.7414,13.025 L5.6414,11.625 C5.7414,11.625 5.8414,11.525 5.9414,11.425 L6.0414,11.425 L12.5414,4.825 C13.2414,4.125 13.1414,2.925 12.4414,2.225 L12.4414,2.225 Z" id="Fill-1" fill="#444444" mask="url(#mask-2)"/>
+            </g>
+        </g>
+    </g>
+</svg>
