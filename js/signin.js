@@ -46,4 +46,26 @@ $(function(){
 		$('.box .weima').css('display','none');
 		$('.box .box2').css('display','block');
 	});
+	var sj = /^1[345789]\d{9}$/;
+	var yx = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+	$('.box .box2 .b2_box1 input.inp3').click(function(){
+		if($('.box .box2 .b2_box1 input.inp4').val()!=''&&$('.box .box2 .b2_box1 input.inp2').val()!=''){
+			if(sj.test($('.box .box2 .b2_box1 input.inp4').val())||yx.test($('.box .box2 .b2_box1 input.inp4').val())){
+				$('.box2 .cwt').css('display','none');
+			}else{
+				$('.box2 .cwt').css('display','block');
+				$('.box2 .cwt').html('请输入正确的手机号或邮箱');
+			}
+		}
+	});
+	$('.box .box2 .b2_boxy .sjh input').blur(function(){
+		if($(this).val()==''){
+			$('.box2 .cwt2').css('display','none');
+		}else if(sj.test($(this).val())){
+			$('.box2 .cwt2').css('display','none');
+		}else{
+			$('.box2 .cwt2').css('display','block');
+			$('.box2 .cwt2').html('请输入正确的手机号');
+		}
+	});
 })

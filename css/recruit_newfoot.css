@@ -1,0 +1,47 @@
+.foot .btm{
+	width: 1130px;
+	height: 98px;
+}
+.foot .btm ul{
+	list-style: none;
+}
+
+.foot .btm ul li{
+	font-size: 12px;
+	float: left;
+	margin-right: 50px;
+	color: darkgray;
+	margin-top: 18px;
+	position: relative;
+} 
+.foot .btm ul li::before{
+	content: '';
+	width: 1px;
+	height: 12px;
+	background-color: darkgray;
+	position: absolute;
+	top: 3px;
+	right: -25px;
+}
+.foot .btm ul li.lis1{
+	cursor: pointer;
+}
+.foot .btm ul li.lis1:hover{
+	color: white;
+	text-decoration: underline;
+}
+.foot .btm ul li.lis2{
+	padding-right:0;
+	margin-right:0;
+}
+.foot .btm ul li.lis3::before{
+	content: '';
+	width: 0;
+}
+.foot .btm ul li.lis4{
+	padding-left: 16px;
+}
+.foot .btm ul li.lis4 img{
+	position: absolute;
+	left: -2px;
+}

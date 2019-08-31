@@ -11,7 +11,7 @@ header .hea_top{
 	background-color: #ffe300;
 	position: relative;
 	z-index: 1;
-	min-width: 1260px;
+	min-width: 1220px;
 }
 .hea_top>a:first-child img{
 	width: 120px;
@@ -273,7 +273,7 @@ header .hea_top{
 .hea_top .search{
 	position: absolute;
 	top: 0;
-	right: 262px;
+	right: 250px;
 	cursor: pointer;
 }
 .hea_top .search a{
@@ -281,6 +281,7 @@ header .hea_top{
 	height: 56px;
 	display: inline-block;
 	text-align: center;
+	color: #282828;
 }
 .hea_top .search a .sea{
 	width: 22px;
@@ -294,13 +295,14 @@ header .hea_top{
 .hea_top .cloud{
 	position: absolute;
 	top: 0;
-	right: 202px;
+	right: 190px;
 }
 .hea_top .cloud a{
 	width: 60px;
 	height: 56px;
 	display: inline-block;
 	text-align: center;
+	color: #282828;
 }
 .hea_top .cloud a .sea{
 	width: 26px;
@@ -418,6 +420,7 @@ header .hea_top{
 	margin-top: -247.5px;
 	left: 50%;
 	margin-left: -240px;
+	z-index: 1;
 	display: none;
 }
 .zbox .box22{
@@ -430,6 +433,34 @@ header .hea_top{
 	box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
 	/* display: none; */
+}
+.box22 .cwt{
+	width: 336px;
+	height: 42px;
+	padding: 0 20px 0 45px;
+	border: 1px solid #d46f16;
+	border-radius: 4px;
+	background: #ffe6e5 url(../img/sign/error-tips.png) no-repeat 20px 12px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 85px;
+	font-size: 14px;
+	line-height: 42px;
+	display: none;
+}
+.box22 .cwt2{
+	width: 336px;
+	height: 42px;
+	padding: 0 20px 0 45px;
+	border: 1px solid #d46f16;
+	border-radius: 4px;
+	background: #ffe6e5 url(../img/sign/error-tips.png) no-repeat 20px 12px;
+	box-sizing: border-box;
+	position: absolute;
+	top: -43px;
+	font-size: 14px;
+	line-height: 42px;
+	display: none;
 }
 .zbox .box22 .b2_uls{
 	list-style: none;
@@ -767,6 +798,13 @@ header .hea_top{
     position: absolute;
 	top: 0;
 	right: 12px;
+}
+.bxxo{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	display: none;
 }
 .box1{
 	width: 100%;
@@ -1398,7 +1436,6 @@ header .hea_top{
 	float: right;
 }
 .bb_rig .c_box{
-	width: 1130px;
 	margin: 0 auto;
 	list-style: none;
 	overflow: hidden;
@@ -1411,6 +1448,9 @@ header .hea_top{
 	float: left;
 	border-radius: 5px;
 	overflow: hidden;
+}
+.bb_rig .c_box li:nth-of-type(4){
+	margin-right: 0;
 }
 /* .bb_rig .c_box li:nth-of-type(5){
 	margin: 0;

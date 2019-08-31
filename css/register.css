@@ -25,6 +25,8 @@ body{
 	font-size: 24px;
 	font-weight: bold;
 	line-height: 27px;
+	position: relative;
+	top: -3px;
 }
 .box .b_top ul li.lis1{
 	padding-right: 25px;
@@ -67,6 +69,7 @@ body{
 .b_cen .n_inp{
 	width: 336px;
 	margin: 40px auto;
+	position: relative;
 }
 .n_inp .sjh{
 	overflow: hidden;
@@ -264,6 +267,21 @@ body{
 }
 .n_inp .uls li:nth-of-type(4):hover{
 	background-color: dodgerblue;
+}
+.n_inp .cwt2{
+	width: 334px;
+	height: 36px;
+	padding: 0 20px 0 45px;
+	border: 1px solid #d46f16;
+	border-radius: 4px;
+	background: #ffe6e5 url(../img/sign/error-tips.png) no-repeat 20px 10px;
+	box-sizing: border-box;
+	position: absolute;
+	top: -38px;
+	left:0 ;
+	font-size: 14px;
+	line-height: 36px;
+	display: none;
 }
 .box .b_bot{
 	margin-top: 30px;

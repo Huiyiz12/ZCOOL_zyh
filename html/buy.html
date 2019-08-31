@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="../css/buy.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../font/font_1322342_tskfofy7o2/iconfont.css">
+	<link rel="stylesheet" href="../font/font_sr5nfv8sw1/iconfont.css">
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		footer{
+			width: 100%;
+			height: 485px;
+			background:url('../img/background.svg') no-repeat;
+			background-size:100%;
+			background-color:#2e3139;
+			color:white;
+		}
+		footer .footer1{
+			margin:0px auto ;
+			height: 444px;
+		}
+		footer .footer1 .footer2{
+			width:1105px;	
+			height: 444px;
+			margin: 0px auto ;
+		}
+		footer .footer1 .footer2 .footer3{
+			height: 280px;
+			width:265px;
+			margin:50px 0px 64px;
+			float:left;
+		}
+		footer .footer1 .footer2 .footer4{
+			height: 280px;
+			width: 550px;
+			float:right;
+			right: 0px;
+			margin-top:50px;
+			margin-bottom:64px;
+		}
+		footer .footer1 .footer5{
+			width:1105px;	
+			margin:-30px auto;
+			font-size:12px;
+		}
+		.footer3>p:nth-of-type(1){
+			font-family: _GB2312 KaiTi_GB2312;
+			font-size:30px;
+		}
+		.footer3>p:nth-of-type(2){
+			height: 22px;
+			font-size: 16px;
+			margin:8px 0px 64px;
+		}
+		.footer3>p:nth-of-type(3){
+			font-family: _GB2312 KaiTi_GB2312;
+			font-size:26px;
+		}
+		.footer3>p:nth-of-type(4){
+			font-family: _GB2312 KaiTi_GB2312;
+			font-size:12px;
+		}
+		.footer4 ul>li{
+			display:inline-block;
+			width: 136px;
+		    float:left;
+		}
+		.circle1{
+			border-radius:50%;
+			background:yellow;
+			height: 10px;
+			width: 10px;
+			display:inline-block;
+			float:left;
+			margin:5px;
+		}
+		.clj{
+			text-decoration:none;
+			color:#aaabae;
+			display:inline-block;
+			margin:10px 20px;
+			font-size: 16px;
+		}
+		.footer4 li:last-child img{
+			position: relative;
+    		left: 15px;
+		}
+		.footer4 li:last-child p:last-child{
+			color:#aaabae;
+			margin:10px 10px ;
+		}
+		.clj:hover{
+			color:white;
+		}
+		.clj1{
+			text-decoration:none;
+			color:#aaabae;
+		}
+		.footer5 span:first-child{
+			display:block;
+			float:left;
+			width:479px;
+			color:#aaabae;
+		}
+		#clj1{
+			width: 217px;
+			display:block;
+			float:left;
+
+		}
+		.footer5>span:nth-of-type(2){
+			width: 274px;
+			display:block;
+			float:left;
+			color:#aaabae;
+		}
+		.footer5 span:last-child{
+			width: 135px;
+			float:left;
+			display:block;
+		}
+		.footer5 span:last-child img:first-child{
+			width: 40px;
+			height: 17px;
+		}
+		aside{
+			position: fixed;
+			right: 30px;
+			bottom: 80px;
+			z-index: 5;
+			/* overflow: hidden; */
+		}
+		aside>ul{
+			list-style: none
+		}
+		aside>ul>li{
+			cursor: pointer;
+			border-radius: 50%;
+			margin-top: 10px;
+			position: relative;
+			display: block;
+			/* border: 1px solid #000; */
+		}
+		aside li>img{
+			width:48px;
+			height: 48px;
+			cursor: pointer;
+		}
+		.my{
+			display: inline-block;
+    		width: 48px;
+			height: 48px;
+			font-size: 20px;
+			background-color: #fff;
+			text-align: center;
+			line-height: 48px;
+			border-radius: 50%;
+		}
+		aside>ul>li:nth-of-type(2)>div{
+			background-color:rgba(0,0,0,0.6);
+			margin: 0px 16px 0px 0px;
+			color: white;
+			font-size: 14px;
+			position: absolute;
+			width: 88px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			top: 0px;
+			right: 48px;
+			white-space: nowrap;
+			display: none;
+		}
+		aside>ul>li:nth-of-type(2)>div>div{
+			position: relative;
+			transform: translate(50%);
+			left: 50%;
+			top: -30px;
+	 		border-width: 10px;
+			border-style: solid;
+			border-color: transparent transparent transparent rgba(0,0,0,0.6);
+		}
+		aside>ul>li:nth-of-type(3)>div{
+			background-color: #fff;
+		/* 	margin: 0px 3px 0px 0px; */
+			font-size: 14px;
+			position: absolute;
+			width: 150px;
+			text-align: center;
+			line-height: 40px;
+			top: -60px;
+			right: 48px;
+			display: none;
+		}
+		aside>ul>li:nth-of-type(3)>div>ul{
+			list-style: none;
+			/* box-shadow:3px 3px 10px -2px rgba(0,0,0,0.6) */
+		}
+		aside>ul>li:nth-of-type(4)>div{
+			background-color:rgba(0,0,0,0.6);
+			color: white;
+			margin: 0px 16px 0px 0px;
+			font-size: 14px;
+			position: absolute;
+			width: 88px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			top: 0px;
+			right: 48px;
+			white-space: nowrap;
+			display: none;
+		}
+		aside>ul>li:nth-of-type(4)>div>div{
+			position: relative;
+			transform: translate(50%);
+			left: 50%;
+			top: -30px;
+			border-width: 10px;
+			border-style: solid;
+			border-color: transparent transparent transparent rgba(0,0,0,0.6);
+		}
+		aside>ul>li:nth-of-type(5)>div{
+			background-color:rgba(0,0,0,0.6);
+			color: white;
+			margin: 0px 16px 0px 0px;
+			font-size: 14px;
+			position: absolute;
+			width: 88px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			top: 0px;
+			right: 48px;
+			white-space: nowrap;
+			display: none;
+		}
+		aside>ul>li:nth-of-type(5)>div>div{
+			position: relative;
+			transform: translate(50%);
+			left: 50%;
+			top: -30px;
+			border-width: 10px;
+			border-style: solid;
+			border-color: transparent transparent transparent rgba(0,0,0,0.6);
+		}
+		.colo{
+			color: red;
+		}
+	</style>
+	<script src="../js/jquery-3.4.1.js"></script>
+	<script>
+		$(function(){
+			$('.bx1').mouseenter(function(){
+				$('.bx1').children().eq(1).css('display','block');
+			});
+			$('.bx1').mouseleave(function(event) {
+				$('.bx1').children().eq(1).css('display','none');	
+			});
+
+			$('.bx2').mouseenter(function(){
+				$('.bx2').children().eq(1).css('display','block');
+			});
+			$('.bx2').mouseleave(function(event) {
+				$('.bx2').children().eq(1).css('display','none');	
+			});
+
+			$('.buy3-2').children().eq(3).mouseenter(function(){
+				$('.bx3').css('display','block');
+			});
+			$('.buy3-2').children().eq(3).mouseleave(function(){
+				$('.bx3').css('display','none');
+			});
+
+			$('.buy3-3').children().eq(0).mouseenter(function(){
+				$(this).css('border-color','black');
+			});
+			$('.buy3-3').children().eq(0).mouseleave(function(){
+				$(this).css('border-color','#ddd');
+			});
+
+			$('.buy3-3').children().eq(1).mouseenter(function(){
+				$(this).css('border-color','black');
+			});
+			$('.buy3-3').children().eq(1).mouseleave(function(){
+				$(this).css('border-color','#ddd');
+			});
+
+			$('.buy3-3').children().eq(2).mouseenter(function(){
+				$(this).css('background','#f0f4f5');
+			});
+			$('.buy3-3').children().eq(2).mouseleave(function(){
+				$(this).css('background','white');
+			});
+
+			$('.buy3-5').children().eq(0).mouseenter(function(){
+				$(this).css('color','red');
+			})
+			$('.buy3-5').children().eq(0).mouseleave(function(){
+				$(this).css('color','black')
+			})
+
+			$('.buy3-6').children().eq(0).click(function(){
+				$(this).addClass('selected');
+				$(this).siblings().removeClass('selected');
+			});
+			$('.buy3-6').children().eq(2).click(function(){
+				$(this).addClass('selected');
+				$(this).siblings().removeClass('selected');
+			});
+
+			$('.checkbox').click(function(){
+				console.log(1)
+			})
+			$('.buy3-10').children().eq(0).children().eq(1).click(function(){
+				$(this).addClass('bui-checkbox1');
+				$('.buy3-11').children().eq(0).children().eq(1).removeClass('bui-checkbox1')
+			})
+			$('.buy3-11').children().eq(0).children().eq(1).click(function(){
+				$(this).addClass('bui-checkbox1');
+				$('.buy3-10').children().eq(0).children().eq(1).removeClass('bui-checkbox1')
+			})
+
+			$('.buy3-12').children().eq(0).mouseenter(function(){
+				$(this).css('opacity','0.6');
+			});
+			$('.buy3-12').children().eq(0).mouseleave(function(){
+				$(this).css('opacity','1');
+			})
+
+			$('.buy3-12').children().eq(1).mouseenter(function(){
+				$(this).css('background','#f0f4f5');
+			});
+			$('.buy3-12').children().eq(1).mouseleave(function(){
+				$(this).css('background','white');
+			});
+
+			$('.buy3-12').children().eq(3).children().eq(0).mouseenter(function(){
+				$(this).css('color','#ea4335');
+			});
+			$('.buy3-12').children().eq(3).children().eq(0).mouseleave(function(){
+				$(this).css('color','#a9a9a9');
+			});
+
+			$('.buy3-12').children().eq(3).children().eq(2).mouseenter(function(){
+				$(this).css('color','#ea4335');
+			});
+			$('.buy3-12').children().eq(3).children().eq(2).mouseleave(function(){
+				$(this).css('color','#a9a9a9');
+			});
+
+			$('.buy3-12').children().eq(3).children().eq(4).mouseenter(function(){
+				$(this).css('color','#ea4335');
+			});
+			$('.buy3-12').children().eq(3).children().eq(4).mouseleave(function(){
+				$(this).css('color','#a9a9a9');
+			});
+
+			$('.buy3-12').children().eq(3).children().eq(6).mouseenter(function(){
+				$(this).css('color','#ea4335');
+			});
+			$('.buy3-12').children().eq(3).children().eq(6).mouseleave(function(){
+				$(this).css('color','#a9a9a9');
+			});
+
+			$('aside').children().children().eq(4).click(function(event){
+				$('.body,html').animate({
+					'scrollTop':'0px'
+				},500)
+			})
+			$('aside').children().children().eq(1).mouseenter(function(event) {
+				$(this).children().eq(1).css({
+					'display': 'block'
+				});	
+				$(this).css({
+					'box-shadow':'3px 3px 10px -2px rgba(0,0,0,0.6)'
+				})
+		});
+		$('aside').children().children().eq(1).mouseleave(function(event) {
+				$(this).children().eq(1).css({
+					'display': 'none'
+				});	
+				$(this).css({
+					'box-shadow':'none'
+				})
+		});
+
+		$('aside').children().children().eq(2).mouseenter(function(event) {
+				$(this).children().eq(1).css({
+					'display': 'block'
+				});
+					$(this).css({
+					'box-shadow':'3px 3px 10px -2px rgba(0,0,0,0.6)'
+				})
+		});
+		$('aside').children().children().eq(2).mouseleave(function(event) {
+				$(this).children().eq(1).css({
+					'display': 'none'
+				});
+				$(this).css({
+					'box-shadow':'none'
+				})
+		});
+
+		$('aside').children().children().eq(2).children().eq(1).children().children().mouseenter(function(event) {
+				$(this).addClass('colo');
+				$(this).siblings('li').removeClass('colo');
+		});
+		$('aside').children().children().eq(2).children().eq(1).children().children().mouseleave(function(event) {
+				$(this).removeClass('colo');
+		});
+
+		$('aside').children().children().eq(3).mouseenter(function(event) {
+				$(this).children().eq(1).css({
+					'display': 'block'
+				});	
+				$(this).css({
+					'box-shadow':'3px 3px 10px -2px rgba(0,0,0,0.6)'
+				})
+		});
+		$('aside').children().children().eq(3).mouseleave(function(event) {
+				$(this).children().eq(1).css({
+					'display': 'none'
+				});	
+				$(this).css({
+					'box-shadow':'none'
+				})
+		});
+
+		$('aside').children().children().eq(4).mouseenter(function(event) {
+				$(this).children().eq(1).css({
+					'display': 'block'
+				});	
+				$(this).css({
+					'box-shadow':'3px 3px 10px -2px rgba(0,0,0,0.6)'
+				})
+		});
+		$('aside').children().children().eq(4).mouseleave(function(event) {
+				$(this).children().eq(1).css({
+					'display': 'none'
+				});	
+				$(this).css({
+					'box-shadow':'none'
+				})
+		});
+
+		$(window).scroll(function(e) {
+
+			if($(this).scrollTop()>100){
+				$('.head').css('box-shadow', '1px 0px 4px -1px black');
+			}else{
+				$('.head').css('box-shadow', 'none');
+				}
+		})
+
+		$('.uls>ul>li').eq(0).click(function(event){
+			console.log($('.uls>ul>li').eq(0).text());
+			var a=$('.uls>ul>li').eq(0).text();
+			$('#lineIcon>span').html(a);
+			// $('.picIcon').css('display','none');
+			$('#camera').css('display','none');
+
+		})
+		$('.uls>ul>li').eq(1).click(function(event){
+			console.log($('.uls>ul>li').eq(1).text());
+			var a=$('.uls>ul>li').eq(1).text();
+			$('#lineIcon>span').html(a);
+			// $('.picIcon').css('display','none');
+			$('#camera').css('display','none');
+		})
+		$('.uls>ul>li').eq(2).click(function(event){
+			console.log($('.uls>ul>li').eq(2).text());
+			var a=$('.uls>ul>li').eq(2).text();
+			$('#lineIcon>span').html(a);
+			// $('.picIcon').css('display','none');
+			$('#camera').css('display','none');
+		})
+		$('.uls>ul>li').eq(3).click(function(event){
+			console.log($('.uls>ul>li').eq(3).text());
+			var a=$('.uls>ul>li').eq(3).text();
+			$('#lineIcon>span').html(a);
+			// $('.picIcon').css('display','none');
+			$('#camera').css('display','none');
+		})
+		})
+	</script>
+</head>
+<body>
+	<div style="height:36px">
+	<header class="head">
+        <div id="nav1">
+            <a href="##" onclick="return false" style="float: left">
+				<a href="Legal.html" style="float: left"><img src="../img/站酷海洛.png" alt="1" width="169px" height="56px" class="zoolsea"></a>
+				
+              <!--   <div class="search">
+                    <div class="searchicon"></div>
+                    <span class="txt1">开始搜索</span>
+                    <div class="down"></div>
+                </div> -->
+			</a>
+			<img src="../img/activity-logo.jpg" alt="" width="200px" height="56px" style="float: left">
+        </div>
+        <div id="nav2">
+            <div class="navtext">
+                <div class="text1"><span class="pic9">图片</span></div>
+                <div class="text2"><span class="pic8">视频</span></div>
+                <div class="text3"><span class="pic8">字体</span></div>
+                <div class="text4"><span class="pic8">音乐</span></div>
+            </div>
+        </div>
+        <div id="nav3">
+            <a href="#" class="firsta on1">价格
+				<ul class="firstalist">
+					<li class="firstalistimg"><img src="../img/在线咨询.png" ><span class="onlinezx">在线咨询</span></li>
+					<li><strong>400-6066-100</strong></li>
+				</ul>
+			</a>
+            <a href="#" class="seca on1">供图</a>
+            <div class="help">
+                <span class="helphover">帮助</span>
+                <div class="list" id="xianshi">
+                    <ul class="listuls">
+                        <li><a>使用演示</a></li>
+                        <li><a>快速指引</a></li>
+                        <li><a>热门回答</a></li>
+                        <li><a>人工服务</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="threea on1">登录</a>
+        </div>
+    </header>
+    </div>
+    <div style="padding:24px; margin:24px auto 0px">
+     <div class="line1">
+          <div id="lineIcon">
+              <span>图片</span>
+              <div class="uls">
+              	<ul>
+              		<li>图片</li>
+              		<li>视频</li>
+              		<li>字体</li>
+              		<li>音乐</li>
+              	</ul>
+              </div>
+              <div class="picIcon">
+                  <img src="../img/下箭头10.png" alt="">
+              </div>
+          </div>
+          <div id="camera">
+              <div class="cameraIcon">
+                  <img src="../img/相机.png" alt="">
+              </div>
+          </div>
+          <input type="text" name="" id="textInput" placeholder="输入您要搜索的关键字，或从下方分类中选择">
+          <div class="line1search">
+              <img src="../img/黑色搜索.png" alt="">
+        </div>
+    </div>
+    </div>
+    <aside>
+		<ul>
+			<li>
+				<img src="../img/xrlb-icon.png" alt="">
+			</li>
+			<li>
+				<span class="iconfont icon-huaban- my"></span>
+				<div>
+					在线客服
+					<div></div>
+				</div>
+			</li>
+			<li>
+				<span class="iconfont icon-gouwuche- my"></span>
+				<div style="background-color:transparent;padding:16px;">
+					<ul style="background:white">
+						<li>图片清单</li>
+						<li>视频清单</li>
+						<li>字体清单</li>
+						<li>音乐清单</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<span class="iconfont icon-02 my"></span>
+				<div>
+					收藏夹
+					<div></div>
+				</div>
+			</li>
+			<li>
+				<span class="iconfont icon-huidaodingbu my"></span>
+				<div>
+					回到顶部
+				<div></div>
+				</div>
+			</li>
+		</ul>
+	</aside>
+	<div class="buy">
+		<div class="buy1">
+			<div style="overflow:hidden">
+				<div class="buy2">
+					<div class="pic1"></div>
+					<div class="bx1">
+						<span class="iconfont icon-xiangji mys"></span>
+						<div>
+							查看大图
+							<div></div>
+						</div>
+					</div>
+					<div class="bx2">
+						<span class="iconfont icon-chakandatu mys"></span>
+						<div>
+							以图搜图
+							<div></div>
+						</div>
+					</div>
+					<div class="bx4">
+							<span class="iconfont icon-ziyuan"></span>
+							<span>举报</span>
+					</div>
+				</div>
+				<div class="buy3">
+					<div class="buy3-1">
+						<p>Dance party poster vector background template with particles lines  highlight and modern geometric shapes in pink and blue colors. Music event flyer or banner abstract</p>
+						<div class="buy3-2">
+							<p>编号：717361414</p>
+							<p>版权：Skrytski Pavel</p>
+							<p>格式：矢量图 可以任您放大或缩小尺寸也不会失去图像解像度</p>
+							<span>
+								<div>？</div>商业用途
+							<div class="bx3">商业用途：是指将素材用于任何媒介上具有商业性的、推广性的、广告性的、推销性的用途，包括但不限于印刷品、商业性的广播、电影或数字化产品、商业广告、市场推广、产品促销、产品包装、产品介绍等场景。</div></span>
+						</div>
+						<div class="buy3-3">
+							<button><span class="iconfont icon-02"></span>收藏本图</button>
+							<button><span class="iconfont icon-huaban-"></span>资讯客服</button>
+							<button><span class="iconfont icon-bianji"></span>编辑图片</button>
+						</div>
+					</div>
+					<div class="buy3-4">
+						<div class="buy3-5">
+							<span>
+								<div>？</div>如何选择
+							</span>
+							<div class="buy3-6">
+								<div class="buy3-7 selected">标准授权</div>
+								<div class="buy3-8"></div>
+								<div class="buy3-9">扩展授权</div>
+							</div>
+						</div>
+						<div class="buy3-10">
+							<label class="checkbox">
+								<input type="checkbox" name="right" checked="checked">
+								<i class="bui-checkbox bui-checkbox1"></i>
+							</label>
+							<span>EPS</span>
+							<strong>矢量</strong>
+							<strong>可随意缩小且不影响画质</strong>
+						</div>
+						<div class="buy3-11">
+							<label class="checkbox">
+								<input type="checkbox" name="right">
+								<i class="bui-checkbox"></i>
+							</label>
+							<span>JPG</span>
+							<strong>大图</strong>
+							<strong>5120×7240</strong>
+							<small>43.35 cm x 61.3 cm (300dpi)</small>
+						</div>
+						<div class="buy3-12">
+							<button>立即下载正片</button>
+							<button>加入清单</button>
+							<div>？</div>
+							<div>
+								<p>授权</p>
+								<span>/</span>
+								<p>授权书</p>
+								<span>/</span>
+								<p>发票</p>
+								<span>/</span>
+								<p>合同问题</p>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+		<h2>查看作者其他作品</h2>
+			<div class="buy4">
+				<span>图片作者：Skrytski Pavel</span>
+				<span>查看全部</span>
+				<span class="iconfont icon-shiliangzhinengduixiang- myss"></span>
+			</div>
+			<div style="overflow:hidden"> 
+			<div class="buy5">
+				<div class="bx">
+					<img src="../img/buy/3.jpg" alt="">
+					<div>
+						<span class="iconfont icon-02"></span>
+						<div>
+							收藏
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<span class="iconfont icon-gengduotupiantubiao"></span>
+						<div>
+							更多相似图片
+							<div></div>
+						</div>
+					</div>
+				</div>
+				<div class="bx">
+					<img src="../img/buy/4.jpg" alt="">
+					<div>
+						<span class="iconfont icon-02"></span>
+						<div>
+							收藏
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<span class="iconfont icon-gengduotupiantubiao"></span>
+						<div>
+							更多相似图片
+							<div></div>
+						</div>
+					</div>
+				</div>
+				<div class="bx">
+					<img src="../img/buy/5.jpg" alt="">
+					<div>
+						<span class="iconfont icon-02"></span>
+						<div>
+							收藏
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<span class="iconfont icon-gengduotupiantubiao"></span>
+						<div>
+							更多相似图片
+							<div></div>
+						</div>
+					</div>
+				</div>
+				<div class="bx">
+					<img src="../img/buy/6.jpg" alt="">
+					<div>
+						<span class="iconfont icon-02"></span>
+						<div>
+							收藏
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<span class="iconfont icon-gengduotupiantubiao"></span>
+						<div>
+							更多相似图片
+							<div></div>
+						</div>
+					</div>
+				</div>
+				<div class="bx">
+					<img src="../img/buy/7.jpg" alt="">
+					<div>
+						<span class="iconfont icon-02"></span>
+						<div>
+							收藏
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<span class="iconfont icon-gengduotupiantubiao"></span>
+						<div>
+							更多相似图片
+							<div></div>
+						</div>
+					</div>
+				</div>
+				<div class="bx">
+					<img src="../img/buy/8.jpg" alt="">
+					<div>
+						<span class="iconfont icon-02"></span>
+						<div>
+							收藏
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<span class="iconfont icon-gengduotupiantubiao"></span>
+						<div>
+							更多相似图片
+							<div></div>
+						</div>
+					</div>
+				</div>
+				</div>
+		</div>	
+		<div class="buy6">
+			<h2>
+				<strong>查看类似图片</strong>
+			</h2>	
+			<span>查看全部</span>
+			<span class="iconfont icon-shiliangzhinengduixiang- myss"></span>
+		</div>
+		<div class="buy7">
+		<div style="width:1104px">
+			<div class="pic11">
+				<a href="buy.html" style="color:white">
+					<img src="../img/01.jpg" alt="">
+					<div>
+						<span  class="iconfont icon-02"></span>
+						<div>
+							收藏
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<span  class="iconfont icon-gengduotupiantubiao"></span>
+						<div>
+							更多相似图片
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<span class="iconfont icon-huiyuan--"></span>
+						<div>
+							该作者更多图片
+							<div></div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="pic2">
+				<img src="../img/02.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic3">
+				<img src="../img/03.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic4">
+				<img src="../img/04.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic5">
+				<img src="../img/05.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic6">
+				<img src="../img/06.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic11">
+				<img src="../img/01.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic2">
+				<img src="../img/02.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic3">
+				<img src="../img/03.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic4">
+				<img src="../img/04.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic5">
+				<img src="../img/05.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic6">
+				<img src="../img/06.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+		<div class="footer1">
+			<div class="footer2">
+				<div class="footer3">
+					<p>站酷海洛</p>
+					<p>一站式正版视觉内容平台</p>
+					<p>ZCOOL站酷</p>
+					<p>站&nbsp;&nbsp;酷&nbsp;&nbsp;旗&nbsp;&nbsp;下&nbsp;&nbsp;品&nbsp;&nbsp;牌&nbsp;&nbsp;</p>
+				</div>
+				<div class="footer4">
+					<ul>
+						<li>
+						<div class="circle1"></div>
+						<p>关于站酷海洛</p>
+						<br>
+						<a href="#" class="clj">关于我们</a>
+						<a href="#" class="clj">套餐价格</a>
+						<a href="#" class="clj"> 海洛API</a>
+						<a href="#" class="clj">授权协议</a>
+						<a href="#" class="clj">隐私政策</a>
+						<a href="#" class="clj">联系我们</a>
+						</li>
+						<li>
+						<div class="circle1"></div>
+						<p>常见问题</p>
+						<br>
+						<a href="#" class="clj">授权/版权</a>
+						<a href="#" class="clj">购买/支付</a>
+						<a href="#" class="clj">下载问题</a>
+						<a href="#" class="clj">退款/退货</a>
+						<a href="#" class="clj">流程相关</a>
+						<a href="#" class="clj">关于套餐</a>
+						<a href="#" class="clj">关于账户</a>
+						</li>
+						<li>
+						<div class="circle1"></div>
+						<p>更多产品</p>
+						<br>
+						<a href="#" class="clj">创意供图平台</a>
+						<a href="#" class="clj">海洛PLUS</a>
+						</li>
+						<li>
+						<div class="circle1"></div>
+						<p>关注我们</p>
+						<br>
+						<img src="../img/weixincode.jpg" alt="" width="72px" height="72px" >
+						<p>
+							"更多创意"
+							<br>
+							"产品查询"
+						</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer5">
+				<span >北京站酷网络科技有限公司旗下产品&nbsp;<a href="#" class="clj1">京ICP备11017824号-7</a><a href="#" class="clj1">京ICP证11017824号-7</a>
+				</span>
+				<a href="#" class="clj1" id="clj1"><img src="../img/icon-police.png" alt="">京公网安备 11010502034683号</a>
+				<span>Copyright © 2014-2018 站酷海洛 版权所有</span>
+				<span>
+					<a href="#"><img src="../img/124x47.png" alt=""></a>
+					<a href="#"><img src="../img/beian.png" alt=""></a>
+					<a href="#"><img src="../img/kexin.png" alt=""></a>
+				</span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

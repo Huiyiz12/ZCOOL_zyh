@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>霓虹海报</title>
+	<link rel="stylesheet" href="../css/poster.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../font/font_1322342_tskfofy7o2/iconfont.css">
+	<link rel="stylesheet" href="../font/font_sr5nfv8sw1/iconfont.css">
+	<script src="../js/jquery-3.4.1.js"></script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		footer{
+			width: 100%;
+			height: 485px;
+			background:url('../img/background.svg') no-repeat;
+			background-size:100%;
+			background-color:#2e3139;
+			color:white;
+		}
+		footer .footer1{
+			margin:0px auto ;
+			height: 444px;
+		}
+		footer .footer1 .footer2{
+			width:1105px;	
+			height: 444px;
+			margin: 0px auto ;
+		}
+		footer .footer1 .footer2 .footer3{
+			height: 280px;
+			width:265px;
+			margin:50px 0px 64px;
+			float:left;
+		}
+		footer .footer1 .footer2 .footer4{
+			height: 280px;
+			width: 550px;
+			float:right;
+			right: 0px;
+			margin-top:50px;
+			margin-bottom:64px;
+		}
+		footer .footer1 .footer5{
+			width:1105px;	
+			margin:-30px auto;
+			font-size:12px;
+		}
+		.footer3>p:nth-of-type(1){
+			font-family: _GB2312 KaiTi_GB2312;
+			font-size:30px;
+		}
+		.footer3>p:nth-of-type(2){
+			height: 22px;
+			font-size: 16px;
+			margin:8px 0px 64px;
+		}
+		.footer3>p:nth-of-type(3){
+			font-family: _GB2312 KaiTi_GB2312;
+			font-size:26px;
+		}
+		.footer3>p:nth-of-type(4){
+			font-family: _GB2312 KaiTi_GB2312;
+			font-size:12px;
+		}
+		.footer4 ul>li{
+			display:inline-block;
+			width: 136px;
+		    float:left;
+		}
+		.circle1{
+			border-radius:50%;
+			background:yellow;
+			height: 10px;
+			width: 10px;
+			display:inline-block;
+			float:left;
+			margin:5px;
+		}
+		.clj{
+			text-decoration:none;
+			color:#aaabae;
+			display:inline-block;
+			margin:10px 20px;
+			font-size: 16px;
+		}
+		.footer4 li:last-child img{
+			position: relative;
+    		left: 15px;
+		}
+		.footer4 li:last-child p:last-child{
+			color:#aaabae;
+			margin:10px 10px ;
+		}
+		.clj:hover{
+			color:white;
+		}
+		.clj1{
+			text-decoration:none;
+			color:#aaabae;
+		}
+		.footer5 span:first-child{
+			display:block;
+			float:left;
+			width:479px;
+			color:#aaabae;
+		}
+		#clj1{
+			width: 217px;
+			display:block;
+			float:left;
+
+		}
+		.footer5>span:nth-of-type(2){
+			width: 274px;
+			display:block;
+			float:left;
+			color:#aaabae;
+		}
+		.footer5 span:last-child{
+			width: 135px;
+			float:left;
+			display:block;
+		}
+		.footer5 span:last-child img:first-child{
+			width: 40px;
+			height: 17px;
+		}
+		aside{
+			position: fixed;
+			right: 30px;
+			bottom: 80px;
+			/* overflow: hidden; */
+		}
+		aside>ul{
+			list-style: none
+		}
+		aside>ul>li{
+			cursor: pointer;
+			border-radius: 50%;
+			margin-top: 10px;
+			position: relative;
+			display: block;
+			/* border: 1px solid #000; */
+		}
+		aside li>img{
+			width:48px;
+			height: 48px;
+			cursor: pointer;
+		}
+		.my{
+			display: inline-block;
+    		width: 48px;
+			height: 48px;
+			font-size: 20px;
+			background-color: #fff;
+			text-align: center;
+			line-height: 48px;
+			border-radius: 50%;
+		}
+		aside>ul>li:nth-of-type(2)>div{
+			background-color:rgba(0,0,0,0.6);
+			margin: 0px 16px 0px 0px;
+			color: white;
+			font-size: 14px;
+			position: absolute;
+			width: 88px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			top: 0px;
+			right: 48px;
+			white-space: nowrap;
+			display: none;
+		}
+		aside>ul>li:nth-of-type(2)>div>div{
+			position: relative;
+			transform: translate(50%);
+			left: 50%;
+			top: -30px;
+	 		border-width: 10px;
+			border-style: solid;
+			border-color: transparent transparent transparent rgba(0,0,0,0.6);
+		}
+		aside>ul>li:nth-of-type(3)>div{
+			background-color: #fff;
+		/* 	margin: 0px 3px 0px 0px; */
+			font-size: 14px;
+			position: absolute;
+			width: 150px;
+			text-align: center;
+			line-height: 40px;
+			top: -60px;
+			right: 48px;
+			display: none;
+		}
+		aside>ul>li:nth-of-type(3)>div>ul{
+			list-style: none;
+			/* box-shadow:3px 3px 10px -2px rgba(0,0,0,0.6) */
+		}
+		aside>ul>li:nth-of-type(4)>div{
+			background-color:rgba(0,0,0,0.6);
+			color: white;
+			margin: 0px 16px 0px 0px;
+			font-size: 14px;
+			position: absolute;
+			width: 88px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			top: 0px;
+			right: 48px;
+			white-space: nowrap;
+			display: none;
+		}
+		aside>ul>li:nth-of-type(4)>div>div{
+			position: relative;
+			transform: translate(50%);
+			left: 50%;
+			top: -30px;
+			border-width: 10px;
+			border-style: solid;
+			border-color: transparent transparent transparent rgba(0,0,0,0.6);
+		}
+		aside>ul>li:nth-of-type(5)>div{
+			background-color:rgba(0,0,0,0.6);
+			color: white;
+			margin: 0px 16px 0px 0px;
+			font-size: 14px;
+			position: absolute;
+			width: 88px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			top: 0px;
+			right: 48px;
+			white-space: nowrap;
+			display: none;
+		}
+		aside>ul>li:nth-of-type(5)>div>div{
+			position: relative;
+			transform: translate(50%);
+			left: 50%;
+			top: -30px;
+			border-width: 10px;
+			border-style: solid;
+			border-color: transparent transparent transparent rgba(0,0,0,0.6);
+		}
+		.colo{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div style="height:36px">
+	<header class="head">
+        <div id="nav1">
+            <a href="##" onclick="return false" style="float: left">
+				<a href="Legal.html" style="float: left"><img src="../img/站酷海洛.png" alt="1" width="169px" height="56px" class="zoolsea"></a>
+				
+              <!--   <div class="search">
+                    <div class="searchicon"></div>
+                    <span class="txt1">开始搜索</span>
+                    <div class="down"></div>
+                </div> -->
+			</a>
+			<img src="../img/activity-logo.jpg" alt="" width="200px" height="56px" style="float: left">
+        </div>
+        <div id="nav2">
+            <div class="navtext">
+                <div class="text1"><span class="pic9">图片</span></div>
+                <div class="text2"><span class="pic8">视频</span></div>
+                <div class="text3"><span class="pic8">字体</span></div>
+                <div class="text4"><span class="pic8">音乐</span></div>
+            </div>
+        </div>
+        <div id="nav3">
+            <a href="#" class="firsta on1">价格
+				<ul class="firstalist">
+					<li class="firstalistimg"><img src="../img/在线咨询.png" ><span class="onlinezx">在线咨询</span></li>
+					<li><strong>400-6066-100</strong></li>
+				</ul>
+			</a>
+            <a href="#" class="seca on1">供图</a>
+            <div class="help">
+                <span class="helphover">帮助</span>
+                <div class="list" id="xianshi">
+                    <ul class="listuls">
+                        <li><a>使用演示</a></li>
+                        <li><a>快速指引</a></li>
+                        <li><a>热门回答</a></li>
+                        <li><a>人工服务</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="threea on1">登录</a>
+        </div>
+    </header>
+    </div>
+      <div style="padding:24px; margin:24px auto 0px">
+     <div class="line1">
+          <div id="lineIcon">
+              <span>图片</span>
+              <div class="uls">
+              	<ul>
+              		<li>图片</li>
+              		<li>视频</li>
+              		<li>字体</li>
+              		<li>音乐</li>
+              	</ul>
+              </div>
+              <div class="picIcon">
+                  <img src="../img/下箭头10.png" alt="">
+              </div>
+          </div>
+          <div id="camera">
+              <div class="cameraIcon">
+                  <img src="../img/相机.png" alt="">
+              </div>
+          </div>
+          <input type="text" name="" id="textInput" placeholder="输入您要搜索的关键字，或从下方分类中选择">
+          <div class="line1search">
+              <img src="../img/黑色搜索.png" alt="">
+        </div>
+       </div>
+    </div>
+	<div class="poster1">
+		<div class="poster2">
+			<div class="poster3">
+				<img src="../img/poster1.png" alt="">
+				<div class="box"></div>
+				<div class="box1">
+					<span class="iconfont icon-02 "></span>
+					<span>收藏</span>
+				</div>	
+			</div>
+			<div class="poster4">
+				<div class="poster5">
+					<div>
+						<h1>霓虹海报</h1>
+						<div></div>
+						<div>
+							<span>共40张图片</span>
+							<span>设计素材</span>
+						</div>
+						<p>推荐关键词：霓虹,海报,背景,渐变</p>
+					</div>
+				</div>
+				<div class="poster6">
+					同系列其他图册
+					<span>↓</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="poster7">
+		<div style="width:1104px">
+			<div class="pic1">
+				<a href="buy.html" style="color:white">
+					<img src="../img/01.jpg" alt="">
+					<div>
+						<span  class="iconfont icon-02"></span>
+						<div>
+							收藏
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<span  class="iconfont icon-gengduotupiantubiao"></span>
+						<div>
+							更多相似图片
+							<div></div>
+						</div>
+					</div>
+					<div>
+						<span class="iconfont icon-huiyuan--"></span>
+						<div>
+							该作者更多图片
+							<div></div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="pic2">
+				<img src="../img/02.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic3">
+				<img src="../img/03.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic4">
+				<img src="../img/04.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic5">
+				<img src="../img/05.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic6">
+				<img src="../img/06.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic1">
+				<img src="../img/01.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic2">
+				<img src="../img/02.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic3">
+				<img src="../img/03.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic4">
+				<img src="../img/04.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic5">
+				<img src="../img/05.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic6">
+				<img src="../img/06.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic1">
+				<img src="../img/01.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic2">
+				<img src="../img/02.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic3">
+				<img src="../img/03.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic4">
+				<img src="../img/04.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic5">
+				<img src="../img/05.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic6">
+				<img src="../img/06.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic1">
+				<img src="../img/01.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic2">
+				<img src="../img/02.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic3">
+				<img src="../img/03.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic4">
+				<img src="../img/04.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic5">
+				<img src="../img/05.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="pic6">
+				<img src="../img/06.jpg" alt="">
+				<div>
+					<span  class="iconfont icon-02"></span>
+					<div>
+						收藏
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span  class="iconfont icon-gengduotupiantubiao"></span>
+					<div>
+						更多相似图片
+						<div></div>
+					</div>
+				</div>
+				<div>
+					<span class="iconfont icon-huiyuan--"></span>
+					<div>
+						该作者更多图片
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h1 class="h11">同系列其他图册</h1>	
+		<p>这里还有其他近似或延展的精选内容</p>
+		<div style="overflow:hidden">
+		<div class="poster8">
+			<div class="tit1">
+			 	<img src="../img/buy/1.png" alt="">
+			 	<p>矢量网络安全插画</p>
+			 	<div class="box5"></div>
+			</div>
+			<div class="tit1">
+			 	<img src="../img/buy/2.png" alt="">
+			 	<p>矢量网络安全插画</p>
+			 	<div class="box5"></div>
+			</div>
+			<div class="tit1">
+			 	<img src="../img/buy/3.png" alt="">
+			 	<p>矢量网络安全插画</p>
+			 	<div class="box5"></div>
+			</div>
+			<div class="tit1">
+			 	<img src="../img/buy/4.png" alt="">
+			 	<p>矢量网络安全插画</p>
+			 	<div class="box5"></div>
+			</div>
+			<div class="tit1">
+			 	<img src="../img/buy/5.png" alt="">
+			 	<p>矢量网络安全插画</p>
+			 	<div class="box5"></div>
+			</div>
+			<div class="tit1">
+			 	<img src="../img/buy/6.png" alt="">
+			 	<p>矢量网络安全插画</p>
+			 	<div class="box5"></div>
+			</div>
+		</div>
+		<div class="poster9">
+			 <button><span class="iconfont icon-biaoqian"></span>全部相册</button>
+
+		</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer1">
+			<div class="footer2">
+				<div class="footer3">
+					<p>站酷海洛</p>
+					<p>一站式正版视觉内容平台</p>
+					<p>ZCOOL站酷</p>
+					<p>站&nbsp;&nbsp;酷&nbsp;&nbsp;旗&nbsp;&nbsp;下&nbsp;&nbsp;品&nbsp;&nbsp;牌&nbsp;&nbsp;</p>
+				</div>
+				<div class="footer4">
+					<ul>
+						<li>
+						<div class="circle1"></div>
+						<p>关于站酷海洛</p>
+						<br>
+						<a href="#" class="clj">关于我们</a>
+						<a href="#" class="clj">套餐价格</a>
+						<a href="#" class="clj"> 海洛API</a>
+						<a href="#" class="clj">授权协议</a>
+						<a href="#" class="clj">隐私政策</a>
+						<a href="#" class="clj">联系我们</a>
+						</li>
+						<li>
+						<div class="circle1"></div>
+						<p>常见问题</p>
+						<br>
+						<a href="#" class="clj">授权/版权</a>
+						<a href="#" class="clj">购买/支付</a>
+						<a href="#" class="clj">下载问题</a>
+						<a href="#" class="clj">退款/退货</a>
+						<a href="#" class="clj">流程相关</a>
+						<a href="#" class="clj">关于套餐</a>
+						<a href="#" class="clj">关于账户</a>
+						</li>
+						<li>
+						<div class="circle1"></div>
+						<p>更多产品</p>
+						<br>
+						<a href="#" class="clj">创意供图平台</a>
+						<a href="#" class="clj">海洛PLUS</a>
+						</li>
+						<li>
+						<div class="circle1"></div>
+						<p>关注我们</p>
+						<br>
+						<img src="../img/weixincode.jpg" alt="" width="72px" height="72px" >
+						<p>
+							"更多创意"
+							<br>
+							"产品查询"
+						</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer5">
+				<span >北京站酷网络科技有限公司旗下产品&nbsp;<a href="#" class="clj1">京ICP备11017824号-7</a><a href="#" class="clj1">京ICP证11017824号-7</a>
+				</span>
+				<a href="#" class="clj1" id="clj1"><img src="../img/icon-police.png" alt="">京公网安备 11010502034683号</a>
+				<span>Copyright © 2014-2018 站酷海洛 版权所有</span>
+				<span>
+					<a href="#"><img src="../img/124x47.png" alt=""></a>
+					<a href="#"><img src="../img/beian.png" alt=""></a>
+					<a href="#"><img src="../img/kexin.png" alt=""></a>
+				</span>
+			</div>
+		</div>
+	</footer>
+	<aside>
+		<ul>
+			<li>
+				<img src="../img/xrlb-icon.png" alt="">
+			</li>
+			<li>
+				<span class="iconfont icon-huaban- my"></span>
+				<div>
+					在线客服
+					<div></div>
+				</div>
+			</li>
+			<li>
+				<span class="iconfont icon-gouwuche- my"></span>
+				<div style="background-color:transparent;padding:16px;">
+					<ul style="background:white">
+						<li>图片清单</li>
+						<li>视频清单</li>
+						<li>字体清单</li>
+						<li>音乐清单</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<span class="iconfont icon-02 my"></span>
+				<div>
+					收藏夹
+					<div></div>
+				</div>
+			</li>
+			<li>
+				<span class="iconfont icon-huidaodingbu my"></span>
+				<div>
+					回到顶部
+				<div></div>
+				</div>
+			</li>
+		</ul>
+	</aside>
+	<script>
+		$(function(){
+			
+			$('.poster6').children().click(function(event){
+				$('.body,html').animate({
+					'scrollTop':'2300px'
+				},500)
+			})
+
+			$('aside').children().children().eq(4).click(function(event){
+				$('.body,html').animate({
+					'scrollTop':'0px'
+				},500)
+			})
+
+			$(window).scroll(function(e) {
+
+					if($(this).scrollTop()>100){
+						$('.head').css('box-shadow', '1px 0px 4px -1px black');
+					}else{
+						$('.head').css('box-shadow', 'none');
+					}
+				})
+
+			$('.poster3').mouseenter(function(event) {
+					$('.box1').css('display','block');
+			});
+			$('.poster3').mouseleave(function(event) {
+					$('.box1').css('display','none');
+			});
+				
+
+		$('aside').children().children().eq(1).mouseenter(function(event) {
+				$(this).children().eq(1).css({
+					'display': 'block'
+				});	
+				$(this).css({
+					'box-shadow':'3px 3px 10px -2px rgba(0,0,0,0.6)'
+				})
+		});
+		$('aside').children().children().eq(1).mouseleave(function(event) {
+				$(this).children().eq(1).css({
+					'display': 'none'
+				});	
+				$(this).css({
+					'box-shadow':'none'
+				})
+		});
+
+		$('aside').children().children().eq(2).mouseenter(function(event) {
+				$(this).children().eq(1).css({
+					'display': 'block'
+				});
+					$(this).css({
+					'box-shadow':'3px 3px 10px -2px rgba(0,0,0,0.6)'
+				})
+		});
+		$('aside').children().children().eq(2).mouseleave(function(event) {
+				$(this).children().eq(1).css({
+					'display': 'none'
+				});
+				$(this).css({
+					'box-shadow':'none'
+				})
+		});
+
+		$('aside').children().children().eq(2).children().eq(1).children().children().mouseenter(function(event) {
+				$(this).addClass('colo');
+				$(this).siblings('li').removeClass('colo');
+		});
+		$('aside').children().children().eq(2).children().eq(1).children().children().mouseleave(function(event) {
+				$(this).removeClass('colo');
+		});
+
+		$('aside').children().children().eq(3).mouseenter(function(event) {
+				$(this).children().eq(1).css({
+					'display': 'block'
+				});	
+				$(this).css({
+					'box-shadow':'3px 3px 10px -2px rgba(0,0,0,0.6)'
+				})
+		});
+		$('aside').children().children().eq(3).mouseleave(function(event) {
+				$(this).children().eq(1).css({
+					'display': 'none'
+				});	
+				$(this).css({
+					'box-shadow':'none'
+				})
+		});
+
+		$('aside').children().children().eq(4).mouseenter(function(event) {
+				$(this).children().eq(1).css({
+					'display': 'block'
+				});	
+				$(this).css({
+					'box-shadow':'3px 3px 10px -2px rgba(0,0,0,0.6)'
+				})
+		});
+		$('aside').children().children().eq(4).mouseleave(function(event) {
+				$(this).children().eq(1).css({
+					'display': 'none'
+				});	
+				$(this).css({
+					'box-shadow':'none'
+				})
+		});
+
+		$('.uls>ul>li').eq(0).click(function(event){
+			console.log($('.uls>ul>li').eq(0).text());
+			var a=$('.uls>ul>li').eq(0).text();
+			$('#lineIcon>span').html(a);
+			// $('.picIcon').css('display','none');
+			$('#camera').css('display','none');
+
+		})
+		$('.uls>ul>li').eq(1).click(function(event){
+			console.log($('.uls>ul>li').eq(1).text());
+			var a=$('.uls>ul>li').eq(1).text();
+			$('#lineIcon>span').html(a);
+			// $('.picIcon').css('display','none');
+			$('#camera').css('display','none');
+		})
+		$('.uls>ul>li').eq(2).click(function(event){
+			console.log($('.uls>ul>li').eq(2).text());
+			var a=$('.uls>ul>li').eq(2).text();
+			$('#lineIcon>span').html(a);
+			// $('.picIcon').css('display','none');
+			$('#camera').css('display','none');
+		})
+		$('.uls>ul>li').eq(3).click(function(event){
+			console.log($('.uls>ul>li').eq(3).text());
+			var a=$('.uls>ul>li').eq(3).text();
+			$('#lineIcon>span').html(a);
+			// $('.picIcon').css('display','none');
+			$('#camera').css('display','none');
+		})
+	// 	$(window).scroll(function(e) {
+	// 				// console.log(e);
+	// 				console.log($(this).scrollTop());
+	// })
+	})
+
+	</script>
+</body>
+</html>

@@ -84,11 +84,34 @@ $(function(){
 	});
 	$('.hea_top .cloud a').click(function(){
 		$('.zbox').show();
+		$('.bxxo').show();
 	});
 	$('.zbox>span').click(function(){
 		$('.zbox').hide();
+		$('.bxxo').hide();
 	});
-	
+	var sj = /^1[345789]\d{9}$/;
+	var yx = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+	$('.zbox .box22 .b2_box1 input.inp3').click(function(){
+		if($('.zbox .box22 .b2_box1 input.inp4').val()!=''&&$('.zbox .box22 .b2_box1 input.inp2').val()!=''){
+			if(sj.test($('.zbox .box22 .b2_box1 input.inp4').val())||yx.test($('.zbox .box22 .b2_box1 input.inp4').val())){
+				$('.box22 .cwt').css('display','none');
+			}else{
+				$('.box22 .cwt').css('display','block');
+				$('.box22 .cwt').html('请输入正确的手机号或邮箱');
+			}
+		}
+	});
+	$('.zbox .box22 .b2_boxy .sjh input').blur(function(){
+		if($(this).val()==''){
+			$('.box22 .cwt2').css('display','none');
+		}else if(sj.test($(this).val())){
+			$('.box22 .cwt2').css('display','none');
+		}else{
+			$('.box22 .cwt2').css('display','block');
+			$('.box22 .cwt2').html('请输入正确的手机号');
+		}
+	});
 	$('.box1 .longnv .tit h2 span:nth-of-type(2)').hover(function(){
 		$('.box1 .longnv .tit .yin1').show();
 	},function(){
